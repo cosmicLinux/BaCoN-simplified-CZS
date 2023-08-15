@@ -3,7 +3,25 @@
 This is a simplfied version of the BaCoN classifier for modification at the CSZ summer school 2023. The original BaCoN code can be found [here](https://github.com/Mik3M4n/BaCoN). 
 
 ## Run on Goolge Colab
-We recommend to clone this github repo to a personal google drive and then run it in google colab. This can be done when loading the notebook in Colab. (Select the GPU runtime. go to the arrow at the upper right corner and then select 'Change runtime type' -> GPU). 
+We recommend to clone this github repo to a personal google drive and then run the jupyter notebook ```notebooks/training_colab.ipynb``` in google colab. (Use GPU runtime. For that go to the arrow at the upper right corner and then select 'Change runtime type' -> GPU). 
+
+Apart from the jupyter notebook the other relevant file for this workshop is the ```models.py``` file. There, we will focus on the function that sets the architecture of our CNN
+
+```
+def make_custom_model(    drop=0.5, 
+                          n_labels=5, 
+                          input_shape=( 100, 4), 
+                          padding='valid', 
+                          filters=(8, 16, 32),
+                          kernel_sizes=(10,5,2),
+                          strides=(2,2,1),
+                          pool_sizes=(2, 2, 0),
+                          strides_pooling=(2, 1, 0),
+                          activation=tf.nn.leaky_relu,
+                          bayesian=True, 
+                          n_dense=1, swap_axes=True, BatchNorm=True
+                          ):
+```
 
 ## BaCoN (BAyesian COsmological Network)
 
@@ -27,8 +45,8 @@ Bibtex:
 }
 ```
 
-The training and testing data was generated  by [Ben Bose](https://github.com/nebblu) with [ReACT](https://github.com/nebblu/ReACT)
-We use synthetic data of matter power spectra inluding the physical effects of massive neutrinos and baryonic effects.
+The training and testing data was generated  by [Ben Bose](https://github.com/nebblu) with [ReACT](https://github.com/nebblu/ReACT).
+We use synthetic data of matter power spectra inluding the physical effects of massive neutrinos and baryonic effects. The preocess of data generation is published in [On the road to per cent accuracy – V. The non-linear power spectrum beyond ΛCDM with massive neutrinos and baryonic feedback](https://academic.oup.com/mnras/article/508/2/2479/6374568)
 
 Bibtex:
 
