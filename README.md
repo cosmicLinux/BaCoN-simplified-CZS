@@ -100,7 +100,9 @@ The default values are ```sample_pace=4```, ```k_max=2.5```.
 
 ### Training networks
 
-To train a model and save the result in ```models/my_model/```:
+The training can be directly started in the jupyter notebook ```notebooks/training_colab.ipynb```. The training parameters can be adapted in the cell of the notebook and the model name is generated from then. The model is then saved under ```models/```.
+
+To train a model locally from the command line and save the result in ```models/my_model/```:
 
 ```
 python train.py --fname='my_model'
