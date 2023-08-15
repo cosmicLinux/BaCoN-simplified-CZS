@@ -10,7 +10,7 @@ We recommend to clone this github repo to a personal google drive and then run i
 BaCoN allows to train and test Bayesian Convolutional Neural Networks in order to **classify dark matter power spectra as being representative of different cosmologies**, as well as to compute the classification confidence. 
 The code now supports the following theories:  **LCDM, wCDM, f(R), DGP, and a randomly generated class** (see the reference for details).
 
-**We also provide a jupyter notebook that allows to load the pre-trained model, classify any matter power spectrum and compute the classification confidence with the method described in the paper (see [4 - Classification](https://github.com/Mik3M4n/BaCoN#4---Classification)). This only requires the raw values of the power spectrum. Feedback on the results of classification is particularly welcome!**
+**We also provide a jupyter notebook that allows to train a model and test the classification on a test data set or on a single spectrum.**
 
 The first release of BaCoN was accompagnied by the paper [Seeking New Physics in Cosmology with Bayesian Neural Networks I: Dark Energy and Modified Gravity](https://arxiv.org/abs/2012.03992). 
 
@@ -27,10 +27,23 @@ Bibtex:
 }
 ```
 
-data generated with React by Ben Bose 
-synthetic data of matter power spectra 
-using massive neutrinos and baryonic effects
+The training and testing data was generated  by [Ben Bose](https://github.com/nebblu) with [ReACT](https://github.com/nebblu/ReACT)
+We use synthetic data of matter power spectra inluding the physical effects of massive neutrinos and baryonic effects.
 
+Bibtex:
+
+```
+@article{bose2021road,
+  title={On the road to per cent accuracy--V. The non-linear power spectrum beyond $\Lambda$CDM with massive neutrinos and baryonic feedback},
+  author={Bose, Benjamin and Wright, Bill S and Cataneo, Matteo and Pourtsidou, Alkistis and Giocoli, Carlo and Lombriser, Lucas and McCarthy, Ian G and Baldi, Marco and Pfeifer, Simon and Xia, Qianli},
+  journal={Monthly Notices of the Royal Astronomical Society},
+  volume={508},
+  number={2},
+  pages={2479--2491},
+  year={2021},
+  publisher={Oxford University Press}
+}
+```
 
 ## Overview and code organisation
 
