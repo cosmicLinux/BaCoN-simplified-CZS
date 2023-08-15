@@ -22,6 +22,9 @@ def make_custom_model(    drop=0.5,
                           n_dense=1, swap_axes=True, BatchNorm=True
                           ):
 ```
+The architecture of the CNN is shown here:
+![BaCoN architecture](BaCoN-architecture.png "BaCoN architecture")
+
 
 ## BaCoN (BAyesian COsmological Network)
 
