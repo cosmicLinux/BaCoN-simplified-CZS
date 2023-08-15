@@ -1,4 +1,4 @@
-# BaCoN for the CSZ summer 
+# BaCoN for the Carl-Zeiss-Stiftung Summer School 2023
 
 This is a simplfied version of the BaCoN classifier for modification at the CSZ summer school 2023. The original BaCoN code can be found [here](https://github.com/Mik3M4n/BaCoN). 
 
